@@ -14,6 +14,7 @@ export default function LotteryEntrance() {
 
     const chainId = Number(chainIdHex)
     const raffleAddress = chainId in contractAddresses ? contractAddresses[chainId][0] : null
+    console.log("INFO: ", chainId, raffleAddress)
 
     const {
         runContractFunction: enterRaffle,
